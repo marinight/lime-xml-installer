@@ -20,8 +20,7 @@ class Main {
 		for (h in haxelibs) {
 			var name = h.get("name");
 			var gitLink = h.get("git");
-			trace(name);
-
+			
 			trace("Installing " + name + '[Library $count/$length]');
 
 			if (gitLink == null) {

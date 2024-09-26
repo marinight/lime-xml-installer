@@ -7,7 +7,7 @@ class Main {
 		var args = Sys.args();
 		var XML:Xml;	
 		if (FileSystem.exists(args[0]))
-		XML = Xml.parse(File.getContent(args[0]));
+			XML = Xml.parse(File.getContent(args[0]));
 		else {
 			trace("Could not find file " + args[0]);
 			return;
